@@ -1,0 +1,134 @@
+.des {
+  background-color: black;
+  text-align: center;
+  font-size: larger;
+  height: 17vh;
+  background-size: cover;
+  color: white;
+  justify-content: center;
+  align-content: center;
+  background-attachment: fixed;
+}
+
+.index {
+  background: url('https://i.ytimg.com/vi/3SsK-cxlj_w/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAzXZ7tMOR3G5ZnraiqNiQ_4CGxPw');
+  height: 80vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about {
+  background-color: black;
+  text-align: center;
+  font-size: larger;
+  height: 80vh;
+  background-size: cover;
+  color: white;
+  justify-content: center;
+  align-content: center;
+  background-attachment: fixed;
+}
+
+.usa {
+  background-image: url('https://www.willtrek.com/wp-content/uploads/2013/04/GrandCanyon1.jpg');
+}
+
+.nepal {
+  background-image: url('https://www.factinate.com/wp-content/uploads/2018/01/17-37.jpg');
+  background-position: center;
+}
+
+.artic {
+  background-image: url('https://cdn.mos.cms.futurecdn.net/qgPxZzRrRCZ5FTN92KYbbZ.jpg');
+}
+
+.aus {
+  background-image: url('https://cdn.zmescience.com/wp-content/uploads/2017/11/Great_barrier_reef.jpg');
+}
+.zim{
+  background-image: url('https://mediaim.expedia.com/destination/2/91a9c954965d3d93801e318e532d8ad2.jpg');
+  background-position: bottom;
+}
+.isr{
+background-image: url('https://www.muradtours.com/wp-content/uploads/2017/07/dead-sea-1.jpg');
+}
+.tur{
+background-image: url('https://www.luxevacationtour.com.tr/wp-content/uploads/2018/04/pamukkale.jpg');
+}
+.usa,
+.aus,
+.nepal,
+.artic,.zim ,.isr,.tur{
+  height: 100vh;
+  background-size: cover;
+  color: white;
+  justify-content: center;
+  align-content: center;
+  background-attachment: fixed;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  bottom: 0;
+  position: sticky;
+}
+
+.footer-container {
+  height: 10vh;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.nav {
+  height: 10vh;
+  justify-content: right;
+  align-content: right;
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  list-style-type: none;
+  top: 0;
+  position: sticky;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav a:hover {
+  background-color: black;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.contact {
+  background-color: black;
+  background-attachment: fixed;
+  color: white;
+  justify-items: center;
+  align-items: center;
+  height: 71vh;
+}
+
+.icons i:hover {
+  background-color: #222;
+  border-radius: 50%;
+  transform: scale(1.1);
+}
+
+.contact button:hover {
+  transform: scale(1.1)
+}
+body{
+  background-color:black;
+  font-family: "Raleway";
+}
