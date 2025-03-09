@@ -47,20 +47,27 @@
 .aus {
   background-image: url('https://cdn.zmescience.com/wp-content/uploads/2017/11/Great_barrier_reef.jpg');
 }
-.zim{
+
+.zim {
   background-image: url('https://mediaim.expedia.com/destination/2/91a9c954965d3d93801e318e532d8ad2.jpg');
   background-position: bottom;
 }
-.isr{
-background-image: url('https://www.muradtours.com/wp-content/uploads/2017/07/dead-sea-1.jpg');
+
+.isr {
+  background-image: url('https://www.muradtours.com/wp-content/uploads/2017/07/dead-sea-1.jpg');
 }
-.tur{
-background-image: url('https://www.luxevacationtour.com.tr/wp-content/uploads/2018/04/pamukkale.jpg');
+
+.tur {
+  background-image: url('https://www.luxevacationtour.com.tr/wp-content/uploads/2018/04/pamukkale.jpg');
 }
+
 .usa,
 .aus,
 .nepal,
-.artic,.zim ,.isr,.tur{
+.artic,
+.zim,
+.isr,
+.tur {
   height: 100vh;
   background-size: cover;
   color: white;
@@ -128,7 +135,21 @@ ul {
 .contact button:hover {
   transform: scale(1.1)
 }
-body{
-  background-color:black;
+
+body {
+  background-color: black;
   font-family: "Raleway";
+}
+
+@media only screen and (max-width: 767px) {
+  .index,.usa,
+  .aus,
+  .nepal,
+  .artic,.zim ,.isr,.tur {
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .des{
+   height: auto;
+  }
 }
