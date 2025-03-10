@@ -4,12 +4,12 @@ function Contact() {
     return (
         <>
             <div className="contact">
-                <h1 className='mt-5'>Contact Us</h1>
-                <div className='d-flex mt-5'>
+                <h1 className='mt-3'>Contact Us</h1>
+                <div className='d-flex mt-3'>
                     <input type="text" placeholder='Enter Your Email' className='form-control w-75' />
                     <button className='btn btn-warning ms-2'>Subscribe</button>
                 </div>
-                <div className="icons mt-5">
+                <div className="icons mt-3">
                     <ul className='d-flex'>
                         <li><i className="fa-brands fa-instagram fa-2x p-3"></i></li>
                         <li><i className="fa-brands fa-facebook fa-2x p-3"></i></li>
