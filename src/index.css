@@ -1,3 +1,4 @@
+/* Styling for the descriptive section */
 .des {
   background-color: black;
   text-align: center;
@@ -5,11 +6,48 @@
   height: 17vh;
   background-size: cover;
   color: white;
+  display: flex; /* Ensure children align properly */
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-content: center;
   background-attachment: fixed;
+  padding: 10px;
 }
 
+/* Title and paragraph inside .des */
+
+.des p {
+  color: white;
+  padding: 10px 20px;
+  background: rgba(34, 34, 34, 0.7);
+  display: inline-block;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  margin: 10px 0; /* Ensure spacing */
+}
+
+.des p {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* When in viewport, slide in and fade in */
+.des p.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.2); /* Light transparent background */
+  display: inline-block;
+  border-radius: 8px;
+  backdrop-filter: blur(5px); /* Slight blur for a glass effect */
+}
+/* Other Sections */
 .index {
   background: url('https://i.ytimg.com/vi/3SsK-cxlj_w/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAzXZ7tMOR3G5ZnraiqNiQ_4CGxPw');
   height: 80vh;
@@ -26,11 +64,13 @@
   height: 80vh;
   background-size: cover;
   color: white;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  align-content: center;
   background-attachment: fixed;
 }
 
+/* Background Images */
 .usa {
   background-image: url('https://www.willtrek.com/wp-content/uploads/2013/04/GrandCanyon1.jpg');
 }
@@ -61,6 +101,7 @@
   background-image: url('https://www.luxevacationtour.com.tr/wp-content/uploads/2018/04/pamukkale.jpg');
 }
 
+/* Common styles for sections */
 .usa,
 .aus,
 .nepal,
@@ -71,11 +112,18 @@
   height: 100vh;
   background-size: cover;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-content: center;
+  text-align: center;
   background-attachment: fixed;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  border-bottom: 5px solid rgba(255, 255, 255, 0.2);
+  position: relative;
 }
 
+/* Footer */
 footer {
   background-color: #222;
   color: #fff;
@@ -85,15 +133,18 @@ footer {
 
 .footer-container {
   height: 10vh;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  align-content: center;
   text-align: center;
 }
 
+/* Navigation */
 .nav {
   height: 10vh;
+  display: flex;
   justify-content: right;
-  align-content: right;
+  align-items: center;
   text-align: center;
   background-color: #222;
   color: #fff;
@@ -104,11 +155,14 @@ footer {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav a {
   text-decoration: none;
   color: #fff;
+  padding: 10px;
 }
 
 .nav a:hover {
@@ -117,13 +171,17 @@ ul {
   padding: 10px;
 }
 
+/* Contact Section */
 .contact {
   background-color: black;
   background-attachment: fixed;
   color: white;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 71vh;
+  text-align: center;
 }
 
 .icons i:hover {
@@ -133,23 +191,23 @@ ul {
 }
 
 .contact button:hover {
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
+/* Body Styles */
 body {
   background-color: black;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
 }
 
+/* Responsive Fix */
 @media only screen and (max-width: 767px) {
-  .index,.usa,
-  .aus,
-  .nepal,
-  .artic,.zim ,.isr,.tur {
+  .index, .usa, .aus, .nepal, .artic, .zim, .isr, .tur {
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
-  .des{
-   height: auto;
+  
+  .des {
+    height: auto;
   }
 }
